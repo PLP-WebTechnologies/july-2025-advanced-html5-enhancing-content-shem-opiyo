@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Table</title>
+</head>
+<body>
+    
+<center>
+    <header>
+        <h1>Delicious Bites Restaurant</h1>
+        <p>Welcome to Delicious Bites – where flavor meets passion.</p>
+    </header>
+
+
+    <table border="1" cellpadding="10">
+        <!-- New Row for Images -->
+        <tr>
+            
+            <td colspan="3" >
+                <center> <h2>Visit Diani Restaurants </h2>  </center>
+                <center> <p><em>for the </em></p> </center>
+                <center> <h1> September Special Dinner</h1> </center>
+            </td>
+            
+        </tr>
+        <tr>
+            <td><img src="images/entrees.png" alt="Entrees Image" width="200" height="250"></td>
+            <td><img src="images/sides.png" alt="Sides Image" width="200" height="250"></td>
+            <td><img src="images/desserts.png" alt="Desserts Image" width="200" height="250"></td>
+        </tr>
+    
+        <!-- Existing Row -->
+        <tr>
+            <!-- Entrees Column -->
+            <td>
+                <h3>Entrees</h3>
+                <ol>
+                    <li>Grilled Chicken Alfredo</li>
+                    <li>Lemon Herb Salmon</li>
+                    <li>Garlic Butter Shrimp</li>
+                    <li>Grilled Chicken Alfredo</li>
+                    <li>Lemon Herb Salmon</li>
+                    <li>Garlic Butter Shrimp</li>
+                </ol>
+            </td>
+    
+            <!-- Sides Column -->
+            <td>
+                <h3>Sides</h3>
+                <ol>
+                    <li>Truffle Fries</li>
+                    <li>Steamed Veggies</li>
+                    <li>Mashed Potatoes</li>
+                    <li>Truffle Fries</li>
+                    <li>Steamed Veggies</li>
+                    <li>Mashed Potatoes</li>
+                </ol>
+            </td>
+    
+            <!-- Desserts Column -->
+            <td>
+                <h3>Desserts</h3>
+                <ol>
+                    <li>Chocolate Lava Cake</li>
+                    <li>Strawberry Cheesecake</li>
+                    <li>Custards and Puddings</li>
+                    <li>Chocolate Lava Cake</li>
+                    <li>Strawberry Cheesecake</li>
+                    <li>Custards and Puddings</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    
+    <!-- Table reservation form -->
+    <h1>Table Reservation Form</h1>
+    
+    <form action="/reserve" method="post">
+        <fieldset>
+            <legend>Reservation Details</legend>
+
+            <table width="600">
+
+            <tr>
+            <td>
+
+            <label for="name">First Name:</label> <br>
+            <input type="text" id="name" name="name" required minlength="2" placeholder="Your full name"> <br>
+
+            </td>
+
+            <td>
+            <label for="name">Last Name:</label><br>
+            <input type="text" id="name" name="name" required minlength="2" placeholder="Your full name"><br>
+            </td>
+
+            </tr>
+
+            <tr>
+            <td>
+
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br>
+            </td>
+
+            <td>
+
+            <label for="time">Time:</label><br>
+            <input type="time" id="time" name="time" required><br>
+            </td>
+            </tr>
+
+            <tr>
+            <td colspan="2">
+            <label for="guests">Number of Guests:</label><br>
+            <input type="number" id="guests" name="guests" min="1" max="20" required><br><br>
+            </td>
+            </tr>
+
+            </table>
+
+        </fieldset>
+
+        <fieldset>
+            <table width="600">
+            <legend>Contact Information</legend>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" 
+                   pattern="[0-9]{10}" 
+                   placeholder="10-digit number" 
+                   required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+            </table>
+        </fieldset>
+
+        <button type="submit">Reserve Table</button>
+    </form>
+
+</center>
+
+    
+
+</body>
+</html>
